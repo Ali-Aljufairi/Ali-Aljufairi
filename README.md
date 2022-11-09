@@ -51,8 +51,7 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/snake.svg" alt="Snake animation" />
-
+![snake gif](https://github.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/github-contribution-grid-snake.gif)
 ###
 
 <div align="center">
