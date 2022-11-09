@@ -50,7 +50,7 @@
 </div>
 
 ###
-<img src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/snake.svg" alt="Snake animation" />
+<img src="https://github.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/snake.svg" alt="Snake animation" />
 
 ###
 
