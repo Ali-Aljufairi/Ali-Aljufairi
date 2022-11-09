@@ -51,7 +51,6 @@
 
 ###
 <img src="https://github.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/snake.svg" alt="Snake animation" />
-
 ###
 
 <div align="center">
