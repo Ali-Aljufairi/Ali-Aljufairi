@@ -1,4 +1,5 @@
-<h2 align="left">Hi 👋! My name is Ali Redha and I'm a Developer , from Bahrain</h2>
+<h1> Hey <img src="https://emojis.slackmojis.com/emojis/images/1577305505/7373/hand_wave.gif?1577305505" width="50" /> What's up?</h1>
+<h2 align="left"> My Name is Ali Redha and I'm a Developer , from Bahrain</h2>
 
 ###
 
