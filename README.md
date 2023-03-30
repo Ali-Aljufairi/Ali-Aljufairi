@@ -12,7 +12,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=false&username=Ali-Aljufairi" height="150" alt="languages graph"  />
 </div>
 <!--React and amplify is next  -->
-###
 
 <img align="right" height="150" src="https://bit.ly/3G6Pin0"  />
 
