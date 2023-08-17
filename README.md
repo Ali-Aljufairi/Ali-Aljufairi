@@ -77,6 +77,9 @@
  <a href="https://www.php.net/">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" width="42" alt="php logo"  />
   </a> 
+ <a href="https://aws.amazon.com/console/">
+  <img src=".github/workflows/aws.png" height="30" width="42" alt="php logo"  />
+  </a> 
  <a href="https://docs.amplify.aws/">
   <img src=".github/workflows/amplify.png" height="30" width="42" alt="php logo"  />
   </a> 
