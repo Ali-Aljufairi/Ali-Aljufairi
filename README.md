@@ -43,7 +43,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" width="42" alt="css3 logo"  />
   </a>
 
-
   <a href= "https://docs.arduino.cc/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="30" width="42" alt="arduino logo"  />
   </a>
@@ -71,14 +70,17 @@
    <a href="https://www.tensorflow.org/">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" width="42" alt="tensorflow logo"  />
   </a>
-  <a href ="https://aws.amazon.com/console/">
-  <img src=".github/workflows/aws.png" height="30" width="40" alt="AWS logo"  />
+  <a href ="https://react.dev/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+           height="30" width="40" alt="React"  />
   </a>
-
  <a href="https://www.php.net/">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" width="42" alt="php logo"  />
   </a> 
-</div>
+ <a href="https://docs.amplify.aws/">
+  <img src=".github/workflows/amplify.png" height="30" width="42" alt="php logo"  />
+  </a> 
+  
 
 <div align="left">
   <a href="https://www.linkedin.com/in/ali-aljufairi/" target="_blank">
