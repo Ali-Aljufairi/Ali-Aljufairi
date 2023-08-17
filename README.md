@@ -1,30 +1,15 @@
-
-<head>
-    <meta name="google-site-verification" content="KKZ_14hcvWK4X88PtGpdeJD3f8q51HXjTG99DQu1WEQ" />
-    <style>
-        .icon-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-        }
-        .icon-container a {
-            margin-right: 10px;
-        }
-    </style>
-</head>
-
 <!-- hello -->
 <h1> Hey <img src="https://emojis.slackmojis.com/emojis/images/1577305505/7373/hand_wave.gif?1577305505" width="50" /> What's up?</h1>
 <h2 align="left"> My Name is Ali Redha Aljufairi and I'm a Developer from Bahrain</h2>
 
 
 
+
 <img align="right" height="150" src="https://bit.ly/3G6Pin0"  />
 
 ###
-<div class="icon-container">
 
+ <div class="icon-container" style="display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
  <a href = "https://www.python.org/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="35" alt="python logo"  />
   </a>
@@ -81,7 +66,7 @@
  <a href="https://docs.amplify.aws/">
   <img src=".github/workflows/amplify.png" height="30" width="42" alt="php logo"  />
   </a> 
-  
+  </div>
 
 <div align="left">
   <a href="https://www.linkedin.com/in/ali-aljufairi/" target="_blank">
