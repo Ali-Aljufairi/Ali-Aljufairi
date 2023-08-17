@@ -72,7 +72,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" width="42" alt="tensorflow logo"  />
   </a>
   <a href ="https://aws.amazon.com/console/">
-  <img src="https://mti.com/wp-content/uploads/2021/04/Amazon-Web-Services-Logo-White.png" height="30" width="40" alt="vim logo"  />
+  <img src=".github/workflows/aws.png" height="30" width="40" alt="AWS logo"  />
   </a>
 
  <a href="https://www.php.net/">
