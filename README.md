@@ -108,12 +108,6 @@
 
 <hr>
 
+![snake animation](https://github.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/github-contribution-grid-snake2.svg)
 
-
-
-<img src="https://github.com/Ali-Aljufairi/Ali-Aljufairi/blob/output/snake.svg" alt="Snake animation" />
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/Ali-Aljufairi/count.svg?"  />
-</div>
 
