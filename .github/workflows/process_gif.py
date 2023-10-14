@@ -47,7 +47,7 @@ if __name__ == "__main__":
     input_path = "dist/ocean.gif"
     print("Absolute input path:", os.path.abspath(input_path))
 
-    output_path = "dist/ocean.gif"
+    output_path = "dist/oceantb.gif"
     skip_frames = 5  # Number of frames to skip at the beginning
 
     gif_remover = GifBackgroundRemover(input_path, output_path, skip_frames)
