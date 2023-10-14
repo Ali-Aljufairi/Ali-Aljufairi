@@ -27,7 +27,7 @@ jobs:
       - name: Set up permissions for dist directory
         run: |
           mkdir -p dist
-          chmod 755 dist  # Adjust permissions as needed
+          chmod -R 755 dist  # Adjust permissions as needed
         working-directory: ${{ github.workspace }}
 
       - name: Generate GitHub Contribution Grid Snake GIF
@@ -41,12 +41,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install Python requirements and Process GIF with Python
+      - name: Install Python requirements
         run: |
           pip install numpy Pillow imageio 
-          python .github/workflows/process_gif.py
         working-directory: ${{ github.workspace }}
 
+      - name: Run Python Script to Process GIF
+        run: python .github/workflows/process_gif.py
+        working-directory: ${{ github.workspace }}
+        
       - name: Push github-contribution-grid-snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
