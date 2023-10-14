@@ -48,7 +48,8 @@ jobs:
 
         working-directory: ${{ github.workspace }}
 
- https://download.respondus.com/lockdown/download.php?id=688217046       run: python process_gif.py
+        run: python process_gif.py
+
 
 
 
