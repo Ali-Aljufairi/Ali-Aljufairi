@@ -2,6 +2,7 @@ from typing import List
 from PIL import Image
 import imageio
 import numpy as np
+import os 
 
 class GifBackgroundRemover:
     def __init__(self, input_path: str, output_path: str, skip_frames: int = 0):
@@ -43,6 +44,8 @@ class GifBackgroundRemover:
         )
 
 if __name__ == "__main__":
+    print("Current working directory:", os.getcwd())
+    print("Contents of 'dist' directory:", os.listdir("dist"))
     input_path = "dist/ocean.gif"
     output_path = "dist/ocean.gif"
     skip_frames = 5  # Number of frames to skip at the beginning
