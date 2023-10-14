@@ -1,14 +1,14 @@
-name: generate animation
+name: Generate Animation
 
 on:
-  # run automatically every 12 hours
+  # Run automatically every 12 hours
   schedule:
     - cron: "0 */12 * * *"
 
-  # allows to manually run the job at any time
+  # Allows manual execution of the job at any time
   workflow_dispatch:
 
-  # run on every push on the main branch
+  # Run on every push on the main branch
   push:
     branches:
       - main
@@ -29,7 +29,7 @@ jobs:
         working-directory: ${{ github.workspace }}
 
       # Generates a snake game from a GitHub user's contributions graph
-      - name: generate github-contribution-grid-snake.gif
+      - name: Generate GitHub Contribution Grid Snake GIF
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -40,11 +40,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Checkout your code to access process_gif.py
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: main  # Specify the branch you want to checkout
+
       # Install Python requirements and run your Python script to process the GIF
       - name: Install Python requirements and Process GIF with Python
         run: |
           pip install numpy Pillow imageio 
-          python process_gif.py
+          python .github/workflows/process_gif.py
         working-directory: ${{ github.workspace }}
 
       # Push the content of the build_dir to a branch
