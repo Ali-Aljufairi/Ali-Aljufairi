@@ -13,8 +13,6 @@ on:
     branches:
     - main
     
-  
-
 jobs:
   generate:
     permissions: 
@@ -23,23 +21,28 @@ jobs:
     timeout-minutes: 5
     
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a gif animation at <gif_out_path>
+      - name: generate github-contribution-grid-snake.gif
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-              dist/github-snake.svg
-              dist/github-snake-dark.svg?palette=github-dark
+              dist/github-snake.gif
+              dist/github-snake-dark.gif?palette=github-dark
               dist/ocean.gif?color_snake=red&color_dots=#5f8bec,#4D2DB7,#9D44C0,#EC53B0,#5272F2
 
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
+      
+      # Make the GIF transparent using ImageMagick
+      - name: Make GIF transparent
+        run: |
+          convert dist/github-snake.gif -transparent white dist/github-snake-transparent.gif
+        working-directory: ${{ github.workspace }}
+      
       # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file>, or as a GitHub page
+      - name: push github-contribution-grid-snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
