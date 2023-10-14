@@ -43,7 +43,8 @@ jobs:
       # Install Python requirements and run your Python script to process the GIF
       - name: Install Python requirements and Process GIF with Python
         run: |
-          pip install numpy Pillow imageio
+          pip install numpy Pillow imageio-r requirements.txt
+
           python process_gif.py
         working-directory: ${{ github.workspace }}
 
