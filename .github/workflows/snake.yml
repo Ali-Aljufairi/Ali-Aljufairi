@@ -1,7 +1,7 @@
 name: generate animation
 
 on:
-  # run automatically every 24 hours
+  # run automatically every 12 hours
   schedule:
     - cron: "0 */12 * * *"
 
@@ -28,7 +28,7 @@ jobs:
           chmod -R 777 dist
         working-directory: ${{ github.workspace }}
 
-      # generates a snake game from a GitHub user (<github_user_name>) contributions graph
+      # Generates a snake game from a GitHub user's contributions graph
       - name: generate github-contribution-grid-snake.gif
         uses: Platane/snk@v3
         with:
@@ -37,7 +37,6 @@ jobs:
             dist/github-snake.gif
             dist/github-snake-dark.gif?palette=github-dark
             dist/ocean.gif?color_snake=red&color_dots=#5f8bec,#4D2DB7,#9D44C0,#EC53B0,#5272F2
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
