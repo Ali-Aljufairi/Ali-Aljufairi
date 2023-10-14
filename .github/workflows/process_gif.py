@@ -44,9 +44,9 @@ class GifBackgroundRemover:
         )
 
 if __name__ == "__main__":
-    print("Current working directory:", os.getcwd())
-    print("Contents of 'dist' directory:", os.listdir("dist"))
     input_path = "dist/ocean.gif"
+    print("Absolute input path:", os.path.abspath(input_path))
+
     output_path = "dist/ocean.gif"
     skip_frames = 5  # Number of frames to skip at the beginning
 

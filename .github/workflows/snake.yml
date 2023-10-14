@@ -15,20 +15,21 @@ on:
 
 jobs:
   generate:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
-      # Set up permissions for the dist directory
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: main  # Specify the branch you want to checkout
+
       - name: Set up permissions for dist directory
         run: |
           mkdir -p dist
-          chmod -R 777 dist
+          chmod 755 dist  # Adjust permissions as needed
         working-directory: ${{ github.workspace }}
 
-      # Generates a snake game from a GitHub user's contributions graph
       - name: Generate GitHub Contribution Grid Snake GIF
         uses: Platane/snk@v3
         with:
@@ -40,20 +41,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Checkout your code to access process_gif.py
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: main  # Specify the branch you want to checkout
-
-      # Install Python requirements and run your Python script to process the GIF
       - name: Install Python requirements and Process GIF with Python
         run: |
           pip install numpy Pillow imageio 
           python .github/workflows/process_gif.py
         working-directory: ${{ github.workspace }}
 
-      # Push the content of the build_dir to a branch
       - name: Push github-contribution-grid-snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
