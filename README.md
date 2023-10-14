@@ -111,6 +111,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/ocean.gif">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/ocean.gif">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/ocean.gif">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/oceantb.gif">
 </picture>
 
