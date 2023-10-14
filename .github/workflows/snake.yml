@@ -40,22 +40,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Install Python requirements
-      - name: Install Python requirements
-        run: pip install -r requirements.txt
-
-        working-directory: ${{ github.workspace }}
-        run: python process_gif.py
-
-
-
-
-      # Run your Python script to process the GIF
-      - name: Process GIF with Python
-        run: python process_gif.py
+      # Install Python requirements and run your Python script to process the GIF
+      - name: Install Python requirements and Process GIF with Python
+        run: |
+          pip install -r requirements.txt
+          python process_gif.py
         working-directory: ${{ github.workspace }}
 
-      # Push the content of <build_dir> to a branch
+      # Push the content of the build_dir to a branch
       - name: Push github-contribution-grid-snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
