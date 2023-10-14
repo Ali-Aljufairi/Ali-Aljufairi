@@ -43,11 +43,9 @@ jobs:
 
       # Install Python requirements
       - name: Install Python requirements
-        run: pip install -r .github\workflows\requirements.txt
-
+        run: pip install -r requirements.txt
 
         working-directory: ${{ github.workspace }}
-
         run: python process_gif.py
 
 
