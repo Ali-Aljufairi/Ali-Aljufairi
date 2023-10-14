@@ -2,6 +2,7 @@
 <h1> Hey <img src="https://emojis.slackmojis.com/emojis/images/1577305505/7373/hand_wave.gif?1577305505" width="50" /> What's up?</h1>
 <h2 align="left"> My Name is Ali Redha Aljufairi and I'm a Developer from Bahrain</h2>
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=5F8BEC&random=false&width=435&lines=DevOps;Cloud+Architecture;Data+scientist;Full+Stack+Developer" alt="Typing SVG" /></a>
 
 
 
