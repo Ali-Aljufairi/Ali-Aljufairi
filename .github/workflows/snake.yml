@@ -44,7 +44,7 @@ jobs:
       # Make the GIF transparent using ImageMagick
       - name: Make GIF transparent
         run: |
-          convert dist/github-snake.gif -transparent white dist/github-snake-transparent.gif
+          convert dist/ocean.gif -transparent white dist/github-snake-transparent.gif
         working-directory: ${{ github.workspace }}
       
       # push the content of <build_dir> to a branch
