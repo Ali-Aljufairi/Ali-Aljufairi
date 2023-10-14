@@ -3,23 +3,23 @@ name: generate animation
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "0 */12 * * *" 
-  
+    - cron: "0 */12 * * *"
+
   # allows to manually run the job at any time
   workflow_dispatch:
-  
-  # run on every push on the master branch
+
+  # run on every push on the main branch
   push:
     branches:
-    - main
-    
+      - main
+
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    
+
     steps:
       # Set up permissions for the dist directory
       - name: Set up permissions for dist directory
@@ -28,28 +28,31 @@ jobs:
           chmod -R 777 dist
         working-directory: ${{ github.workspace }}
 
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a gif animation at <gif_out_path>
+      # generates a snake game from a GitHub user (<github_user_name>) contributions graph
       - name: generate github-contribution-grid-snake.gif
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-              dist/github-snake.gif
-              dist/github-snake-dark.gif?palette=github-dark
-              dist/ocean.gif?color_snake=red&color_dots=#5f8bec,#4D2DB7,#9D44C0,#EC53B0,#5272F2
+            dist/github-snake.gif
+            dist/github-snake-dark.gif?palette=github-dark
+            dist/ocean.gif?color_snake=red&color_dots=#5f8bec,#4D2DB7,#9D44C0,#EC53B0,#5272F2
 
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      # Make the GIF transparent using ImageMagick
-      - name: Make GIF transparent
-        run: |
-          convert dist/ocean.gif -transparent white dist/github-snake-transparent.gif
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Install Python requirements
+      - name: Install Python requirements
+        run: pip install -r requirements.txt
         working-directory: ${{ github.workspace }}
-      
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file>, or as a GitHub page
-      - name: push github-contribution-grid-snake.gif to the output branch
+
+      # Run your Python script to process the GIF
+      - name: Process GIF with Python
+        run: python process_gif.py
+        working-directory: ${{ github.workspace }}
+
+      # Push the content of <build_dir> to a branch
+      - name: Push github-contribution-grid-snake.gif to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
