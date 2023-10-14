@@ -43,7 +43,7 @@ class GifBackgroundRemover:
         )
 
 if __name__ == "__main__":
-    input_path = "ocean.gif"
+    input_path = "output/ocean.gif"
     output_path = "output/ocean.gif"
     skip_frames = 5  # Number of frames to skip at the beginning
 
