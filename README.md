@@ -1,15 +1,14 @@
 <!-- hello -->
-<div>
-  <p align="center">
-    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=5F8BEC&random=false&width=435&lines=DevOps;Cloud+Architecture;Data+scientist;Full+Stack+Developer" alt="Typing SVG" /></a>
-  </p>
-</div>
+<p align ="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1000&pause=10000000000000000000000&color=E852AF&center=true&random=false&width=435&lines=I'm+Ali+Redha" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=5F8BEC&center=true&random=false&width=435&lines=A+DevOps+;A+Cloud+Architecte;A+Embedded+Software+Engineer;A+Data+Scientist;A+Full+Stack+Developer;A+Data+Analyst" alt="Typing SVG" /></a>
+</p>
 
-<img align="right" height="150" src="https://bit.ly/3G6Pin0" />
 
-###
+<img align="right" height="133" src="https://bit.ly/3G6Pin0" />
 
-<div class="icon-container" style="display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
+
+<div class="icon-container" style="display: flex;">
   <a href="https://www.python.org/" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="35" alt="python logo" />
   </a>
@@ -54,7 +53,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" width="42" alt="tensorflow logo" />
   </a>
 
-  <a href="https://react.dev/"></a>
+<a href="https://react.dev/"></a>
 
   <a href="https://www.php.net/">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" width="42" alt="php logo" />
@@ -84,10 +83,10 @@
   </a>
 </div>
 
-###
+  <br><br><br>
 
-## ⚡ Stats ⚡
-
+<h2 align="center">⚡ Stats ⚡ </h2>
+ 
 <p align="center">
   <div align="center">
     <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
