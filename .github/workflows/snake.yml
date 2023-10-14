@@ -21,6 +21,13 @@ jobs:
     timeout-minutes: 5
     
     steps:
+      # Set up permissions for the dist directory
+      - name: Set up permissions for dist directory
+        run: |
+          mkdir -p dist
+          chmod -R 777 dist
+        working-directory: ${{ github.workspace }}
+
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a gif animation at <gif_out_path>
       - name: generate github-contribution-grid-snake.gif
         uses: Platane/snk@v3
