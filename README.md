@@ -108,7 +108,7 @@
 <hr>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/oceantb.gif">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/oceantb.gif">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/oceantb.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/snaketp.gif">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/snaketp.gif">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ali-Aljufairi/Ali-Aljufairi/output/snaketp.gif">
 </picture>
