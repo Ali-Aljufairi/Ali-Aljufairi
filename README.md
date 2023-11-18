@@ -90,17 +90,17 @@
  
 <p align="center">
   <div align="center">
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width="390" src="https://github-readme-streak-stats.herokuapp.com/?user=Ali-Aljufairi&theme=react&border=5f8bec&hide_border=true" alt="Ali-Aljufairi" />
+    <a href="https://github.com/Ali-Aljufairi" title="Go to Source">
+      <img align="left" width="390" src="https://github-readme-streak-stats-kappa-five.vercel.app?user=Ali-Aljufairi&theme=react&hide_border=true&border_radius=&fire=EB2DD3&background=FFFFFF00&currStreakNum=E640EC&sideLabels=5F8BEC&sideNums=5F8BEC&ring=5F8BEC&currStreakLabel=5F8BEC&stroke=E640EC" alt="Ali-Aljufairi" />
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <img align="right" width="390" src="https://github-readme-stats.vercel.app/api?username=Ali-Aljufairi&show_icons=true&theme=react&border_color=5f8bec&hide_border=true" />
+      <img align="right" width="390" src="https://github-readme-stats.vercel.app/api?username=Ali-Aljufairi&show_icons=true&theme=transparent&border_color=5f8bec&hide_border=true&title_color=E640EC&text_color=5F8BEC&icon_color=E640EC" />
     </a>
   </div>
   <br><br><br><br><br><br><br><br><br>
   <div align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img width="325" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ali-Aljufairi&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=5f8bec&hide_border=true" />
+    <a href="https://github.com/Ali-Aljufairi">
+      <img width="325" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ali-Aljufairi&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=E640EC&theme=transparent&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=5f8bec&hide_border=true&" />
     </a>
   </div>
   <br>
